@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Hotel Website</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+   <link rel="stylesheet" href="motel.css">
+</head>
+<body>
+
+
+   <header class="header">
+
+      <a href="#" class="logo"> <i class="fas fa-hotel"></i> hotel </a>
+
+      <nav class="navbar">
+         <a href="/HTML">HOME</a>
+         <a href="/rooms">ROOM</a>
+         <a href="/gallery">GALLERY</a>
+         <a href="#review">REVIEW</a>
+         <a href="#reservation">BOOK NOW</a>
+      </nav>
+
+      <div id="menu-btn" class="fas fa-bars"></div>
+
+   </header>
+
+
+   <!-- end -->
+
+   <!-- home -->
+
+   <section class="home" id="home">
+
+      <div class="swiper home-slider">
+
+         <div class="swiper-wrapper">
+
+            <div class="swiper-slide slide" style="background: url(gallery1.jpeg) no-repeat;">
+               <div class="content">
+                  <h3>MAKE YOUR STAY LUXIRIOUS</h3>
+               
+               </div>
+            </div>
+
+            <div class="swiper-slide slide" style="background: url(gallery2.jpeg) no-repeat;">
+               <div class="content">
+                  <h3>MAKE YOUR STAY LUXIRIOUS</h3>
+
+               </div>
+            </div>
+
+            <div class="swiper-slide slide" style="background: url(gallery3.jpeg) no-repeat;">
+               <div class="content">
+                  <h3>MAKE YOUR STAY LUXIRIOUS</h3>
+
+               </div>
+            </div>
+
+            <div class="swiper-slide slide" style="background: url(gallery4.jpeg) no-repeat;">
+               <div class="content">
+                  <h3>MAKE YOUR STAY LUXIRIOUS</h3>
+               </div>
+            </div>
+
+         </div>
+
+         <div class="swiper-button-next"></div>
+         <div class="swiper-button-prev"></div>
+
+      </div>
+
+   </section>
+
+   <!-- Gallery -->
+ <section class="gallery" id="gallery">
+
+      <h1 class="heading">our gallery</h1>
+
+      <div class="swiper gallery-slider">
+
+         <div class="swiper-wrapper">
+
+            <div class="swiper-slide slide">
+               <img src="gallery1.jpeg" alt="">
+               <div class="icon">
+                  <i class="fas fa-magnifying-glass-plus"></i>
+               </div>
+            </div>
+
+            <div class="swiper-slide slide">
+               <img src="gallery2.jpeg" alt="">
+               <div class="icon">
+                  <i class="fas fa-magnifying-glass-plus"></i>
+               </div>
+            </div>
+
+            <div class="swiper-slide slide">
+               <img src="gallery3.jpeg" alt="">
+               <div class="icon">
+                  <i class="fas fa-magnifying-glass-plus"></i>
+               </div>
+            </div>
+
+            <div class="swiper-slide slide">
+               <img src="gallery4.jpeg" alt="">
+               <div class="icon">
+                  <i class="fas fa-magnifying-glass-plus"></i>
+               </div>
+            </div>
+
+            <div class="swiper-slide slide">
+               <img src="gallery5.jpeg" alt="">
+               <div class="icon">
+                  <i class="fas fa-magnifying-glass-plus"></i>
+               </div>
+            </div>
+
+            <div class="swiper-slide slide">
+               <img src="gallery6.jpeg" alt="">
+               <div class="icon">
+                  <i class="fas fa-magnifying-glass-plus"></i>
+               </div>
+            </div>
+
+            <div class="swiper-slide slide">
+               <img src="gallery7.jpeg" alt="">
+               <div class="icon">
+                  <i class="fas fa-magnifying-glass-plus"></i>
+               </div>
+            </div>
+
+            <div class="swiper-slide slide">
+               <img src="gallery8.jpeg" alt="">
+               <div class="icon">
+                  <i class="fas fa-magnifying-glass-plus"></i>
+               </div>
+            </div>
+
+
+            <div class="swiper-slide slide">
+               <img src="gallery9.jpeg" alt="">
+               <div class="icon">
+                  <i class="fas fa-magnifying-glass-plus"></i>
+               </div>
+            </div>
+
+         </div>
+
+      </div>
+
+   </section>
+   <!-- availability -->
+
+  <!-- availability -->
+<div class="availability-container">
+   <h2 class="availability-heading">CHECK AVAILABILITY</h2>
+   <form action="" class="availability-form">
+     <div class="form-row">
+       <div class="form-group">
+         <label for="checkin">Check-in</label>
+         <input type="date" id="checkin" class="form-input" required>
+       </div>
+       <div class="form-group">
+         <label for="checkout">Check-out</label>
+         <input type="date" id="checkout" class="form-input" required>
+       </div>
+     </div>
+     <div class="form-row">
+       <div class="form-group">
+         <label for="adults">Adults</label>
+         <select id="adults" class="form-input">
+           <option value="1">1 adult</option>
+           <option value="2">2 adults</option>
+           <option value="3">3 adults</option>
+           <option value="4">4 adults</option>
+         </select>
+       </div>
+       <div class="form-group">
+         <label for="children">Children</label>
+         <select id="children" class="form-input">
+           <option value="0">0 children</option>
+           <option value="1">1 child</option>
+           <option value="2">2 children</option>
+           <option value="3">3 children</option>
+         </select>
+       </div>
+     </div>
+     <div class="form-row">
+       <div class="form-group">
+         <label for="rooms">Rooms</label>
+         <select id="rooms" class="form-input">
+           <option value="1">1 room</option>
+           <option value="2">2 rooms</option>
+           <option value="3">3 rooms</option>
+           <option value="4">4 rooms</option>
+         </select>
+       </div>
+     </div>
+     <button type="submit" class="btn btn-primary">Check Availability</button>
+   </form>
+ </div>
+ <!-- end -->
+
+   <!-- end -->
+
+
+ 
+
+   <!-- room -->
+
+   <section class="room" id="room">
+
+      <h1 class="heading">our rooms</h1>
+
+      <div class="swiper room-slider">
+
+         <div class="swiper-wrapper">
+
+            <div class="swiper-slide slide">
+               <div class="image">
+                  <span class="price">₹9,999/night</span>
+                  <img src="room-1.jpeg" alt="room-1">
+                 
+               </div>
+               <div class="content">
+                  <h3>Signature suite</h3>
+                  <p>Discover unparalleled luxury in our Signature Suite, priced at 89,999 rupees per night. Embrace lavish accommodations, complimentary Wi-Fi, and panoramic views for an unforgettable stay, epitomizing sophistication and indulgence at its finest.</p>
+                  <div class="stars">
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star-half-alt"></i>
+                  </div>
+                  <a href="#" class="btn">book now</a>
+               </div>
+            </div>
+
+            <div class="swiper-slide slide">
+               <div class="image">
+                  <span class="price">₹7,999/night</span>
+                  <img src="room-2.jpeg" alt="">
+                
+               </div>
+               <div class="content">
+                  <h3>Luxury Grande</h3>
+                  <p>Experience the epitome of luxury in our 79,999 rupee per night Luxury Grenade suite. Unwind in lavish accommodations, complimentary Wi-Fi, and panoramic views, ensuring an unforgettable stay filled with sophistication and indulgence.</p>
+                  <div class="stars">
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star-half-alt"></i>
+                  </div>
+                  <a href="#" class="btn">book now</a>
+               </div>
+            </div>
+
+            <div class="swiper-slide slide">
+               <div class="image">
+                  <span class="price">₹6,999/night</span>
+                  <img src="room-3.jpeg" alt="">
+                  
+               </div>
+               <div class="content">
+                  <h3>Lifestyle suite</h3>
+                  <p>Indulge in opulent comfort at our Lifestyle Suite, available at 74,999 rupees per night. Experience lavish amenities, complimentary Wi-Fi, and breathtaking vistas, ensuring an unparalleled stay that embodies luxury and refinement.</p>
+                  <div class="stars">
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star-half-alt"></i>
+                  </div>
+                  <a href="#" class="btn">book now</a>
+               </div>
+            </div>
+
+            <div class="swiper-slide slide">
+               <div class="image">
+                  <span class="price">₹8,999/night</span>
+                  <img src="room-4.jpeg" alt="">
+               </div>
+               <div class="content">
+                  <h3>Presitage Suite</h3>
+                  <p>Indulge in opulence within our Prestige Suite, at 84,999 rupees per night. Experience lavish amenities, inclusive Wi-Fi, and breathtaking vistas, ensuring an unparalleled sojourn. Luxury redefined,  your ultimate retreat awaits.</p>
+                  <div class="stars">
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star-half-alt"></i>
+                  </div>
+                  <a href="#" class="btn">book now</a>
+               </div>
+            </div>
+
+            <div class="swiper-slide slide">
+               <div class="image">
+                  <span class="price">₹10,999/night</span>
+                  <img src="room-5.jpeg" alt="">
+                 
+               </div>
+               <div class="content">
+                  <h3>Presidental Suite</h3>
+                  <p>Indulge in opulence with our Presidential Suite, priced at 99,999 rupees per night. Enjoy lavish amenities, including complimentary Wi-Fi, and breathtaking vistas. Elevate your stay to unparalleled levels of sophistication and luxury.</p>
+                  <div class="stars">
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star-half-alt"></i>
+                  </div>
+                  <a href="#" class="btn">book now</a>
+               </div>
+            </div>
+
+            <div class="swiper-slide slide">
+               <div class="image">
+                  <span class="price">₹4,499/night</span>
+                  <img src="room-6.jpeg" alt="">
+                
+               </div>
+               <div class="content">
+                  <h3>Junior Suite</h3>
+                  <p>Unwind in our Junior Suite, offering spacious accommodations, a king-size bed, separate living area, luxurious bathroom amenities, complimentary Wi-Fi, a stocked minibar, and stunning views, all for 59,990 rupees per night.</p>
+                  <div class="stars">
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star"></i>
+                     <i class="fas fa-star-half-alt"></i>
+                  </div>
+                  <a href="#" class="btn">book now</a>
+               </div>
+            </div>
+
+         </div>
+
+         <div class="swiper-pagination"></div>
+
+      </div>
+
+   </section>
+
+   <!-- end -->
+
+
+   <!-- gallery -->
+
+  
+
+   <!-- end -->
+
+   <!-- review -->
+
+   <section class="review" id="review">
+      <div class="swiper review-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide slide">
+            <h2 class="heading">client's review</h2>
+            <i class="fas fa-quote-right"></i>
+            <p> A delightful stay at our hotel! Guests experienced exceptional service, comfortable accommodations, and memorable moments. Thank you for choosing us for your getaway. We look forward to welcoming you back for another fantastic experience!"</p>
+            <div class="user">
+              <img src="anonymus-1235169_640.webp" alt="">
+              <div class="user-info">
+                <h3>Anonymus User</h3>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Add more slides here -->
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+   <!-- end -->
+
+
+   <!-- reservation -->
+
+   <section class="reservation" id="reservation">
+
+      <h1 class="heading">book now</h1>
+
+      <form action="">
+
+         <div class="container">
+
+            <div class="box">
+               <p>name <span>*</span></p>
+               <input type="text" class="input" placeholder="Your Name">
+            </div>
+
+            <div class="box">
+               <p>email <span>*</span></p>
+               <input type="text" class="input" placeholder="Your Email">
+            </div>
+
+            <div class="box">
+               <p>check in <span>*</span></p>
+               <input type="date" class="input">
+            </div>
+
+            <div class="box">
+               <p>check out <span>*</span></p>
+               <input type="date" class="input">
+            </div>
+
+            <div class="box">
+               <p>adults <span>*</span></p>
+               <select name="adults" class="input">
+                  <option value="1">1 adults</option>
+                  <option value="2">2 adults</option>
+                  <option value="3">3 adults</option>
+                  <option value="4">4 adults</option>
+                  <option value="5">5 adults</option>
+                  <option value="6">6 adults</option>
+               </select>
+            </div>
+
+            <div class="box">
+               <p>children <span>*</span></p>
+               <select name="child" class="input">
+                  <option value="1">1 child</option>
+                  <option value="2">2 child</option>
+                  <option value="3">3 child</option>
+                  <option value="4">4 child</option>
+                  <option value="5">5 child</option>
+                  <option value="6">6 child</option>
+               </select>
+            </div>
+
+            <div class="box">
+               <p>rooms <span>*</span></p>
+               <select name="rooms" class="input">
+                  <option value="1">1 rooms</option>
+                  <option value="2">2 rooms</option>
+                  <option value="3">3 rooms</option>
+                  <option value="4">4 rooms</option>
+                  <option value="5">5 rooms</option>
+                  <option value="6">6 rooms</option>
+               </select>
+            </div>
+
+            <div class="box">
+               <p>room type <span>*</span></p>
+               <select name="type" class="input">
+                  <option value="1">exclusive rooms</option>
+                  <option value="2">family rooms</option>
+                  <option value="3">daily rooms</option>
+                  <option value="4">panoramic rooms</option>
+               </select>
+            </div>
+   
+         </div>
+
+         <input type="submit" value="check availability" class="btn">
+
+      </form>
+
+   </section>
+
+   <!-- end -->
+
+   <!-- footer -->
+
+   <section class="footer">
+
+      <div class="box-container">
+
+         <div class="box contact">
+            <h3>contact info</h3>
+            <a href="#"> <i class="fas fa-phone"></i> +91 9333933933 </a>
+            <a href="#"> <i class="fas fa-phone"></i> +91 9323456787</a>
+            <a href="#"> <i class="fas fa-envelope"></i>vishuchowdary399@gmail.com</a>
+            <a href="#"> <i class="fas fa-map"></i>Hydrebad,India</a>
+         </div>
+
+        
+
+         
+
+      </div>
+
+      <div class="share">
+         <a href="#" class="fab fa-facebook-f"></a>
+         <a href="#" class="fab fa-instagram"></a>
+         <a href="#" class="fab fa-twitter"></a>
+         <a href="#" class="fab fa-pinterest"></a>
+      </div>
+
+      <div class="credit">&copy; copyright @ 2024 by <span>Viswanadh</span></div>
+
+   </section>
+
+   <!-- end -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+   <script src="script.js"></script>
+   
+
+</body>
+</html>

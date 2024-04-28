@@ -1,0 +1,103 @@
+/* Color theme */
+:root {
+    --primary-color: goldenrod;
+    --secondary-color: #e67e22;
+    --light-color: #ecf0f1;
+    --dark-color: black;
+  }
+  
+
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--light-color);
+    color: var(--dark-color);
+  }
+  
+  /* Navigation bar */
+  header {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    padding: 10px;
+  }
+  .Logo img{
+    height: 1px;
+    width: 1px;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color: var(--light-color);
+    text-decoration: none;
+  }
+  
+  /* Gallery */
+  .gallery-container {
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: center;
+  }
+  
+  .gallery-slider {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .slide {
+    flex: 0 0 100%;
+  }
+  
+  .slide img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .gallery-controls {
+    margin-top: 10px;
+  }
+  
+  .prev,
+  .next {
+    padding: 8px 16px;
+    margin: 0 5px;
+    background-color: var(--secondary-color);
+    color: var(--light-color);
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    padding: 10px;
+    text-align: center;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    nav ul li {
+      margin-bottom: 10px;
+    }
+  }

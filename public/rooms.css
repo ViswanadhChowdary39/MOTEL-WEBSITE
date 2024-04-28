@@ -1,0 +1,97 @@
+/* Color theme */
+:root {
+    --primary-color:goldenrod;
+    --secondary-color:white;
+    --light-color: #5c5346
+    --dark-color: #34495e;
+  }
+  
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--light-color);
+    color: var(--dark-color);
+  }
+  
+  /* Navigation bar */
+  header {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    padding: 10px;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color: var(--light-color);
+    text-decoration: none;
+  }
+  
+  /* Room types */
+  .img{
+height: 500px;
+width: 500px;
+
+  }
+  .img5{
+    height: 150px !important;
+    width: 500px;
+}
+  .room-types {
+    max-width: 1200px;
+    margin: 20px auto;
+    text-align: center;
+  }
+  
+  .room-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+  }
+  
+  .room-card {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .room-card img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .room-card h3 {
+    margin-top: 10px;
+  }
+  
+  .book-now {
+    padding: 8px 16px;
+    background-color: var(--secondary-color);
+    color: var(--light-color);
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    padding: 10px;
+    text-align: center;
+  }
