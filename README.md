@@ -5,7 +5,7 @@
 
 A modern responsive website for "Blue Heaven Motel" featuring room booking, amenities display, and contact functionality.
 
-![Motel Website Screenshot](public/Screenshot 2024-04-28 135538.png) <!-- Add your screenshot path -->
+![Motel Website Screenshot](public/Screenshot 2024-04-28 135743.png) <!-- Add your screenshot path -->
 
 ## Features ✨
 
